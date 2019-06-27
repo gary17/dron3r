@@ -201,7 +201,7 @@ class DashboardViewController: UITableViewController, WebSocketDelegate
 			{
 				// a known drone, update in the Object Store and the UI
 				
-				serialQueue.sync
+				threadQueue.sync
 				{
 					// WARNING: the Server.swift source file should be in a different build module for internal(set) isolation to work
 					drone.update(to: memento.location, with: memento.speed, at: memento.timestamp)
@@ -217,7 +217,7 @@ class DashboardViewController: UITableViewController, WebSocketDelegate
 				let drone = RemoteDrone(identifier: memento.droneIdentifier,
 					location: memento.location, speed: memento.speed)
 
-				serialQueue.sync
+				threadQueue.sync
 				{
 					do
 					{
@@ -305,7 +305,7 @@ class DashboardViewController: UITableViewController, WebSocketDelegate
 	}
 	
 	// Swift's low-overhead thread synchronization primitive
-	private let serialQueue = DispatchQueue(label: "DashboardViewController.objectStore.queue")
+	private let threadQueue = DispatchQueue(label: "DashboardViewController.objectStore.queue")
 }
 
 extension RemoteDrone

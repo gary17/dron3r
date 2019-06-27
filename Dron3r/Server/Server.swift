@@ -53,7 +53,7 @@ class Server // a pass-by-reference type
 	private let objectStore: ObjectStore
 
 	// Swift's low-overhead thread synchronization primitive
-	private let serialQueue = DispatchQueue(label: "Server.objectStore.queue")
+	private let threadQueue = DispatchQueue(label: "Server.objectStore.queue")
 	
 	//
 	
@@ -78,7 +78,7 @@ class Server // a pass-by-reference type
 		{
 			// a known drone, update in the Object Store
 
-			serialQueue.sync
+			threadQueue.sync
 			{
 				// WARNING: the Server.swift source file should be in a different build module for internal(set) isolation to work
 				drone.update(to: memento.location, with: memento.speed, at: memento.timestamp)
@@ -91,7 +91,7 @@ class Server // a pass-by-reference type
 			let drone = RemoteDrone(identifier: memento.droneIdentifier,
 				location: memento.location, speed: memento.speed)
 
-			serialQueue.sync
+			threadQueue.sync
 			{
 				do
 				{
@@ -138,7 +138,7 @@ class Server // a pass-by-reference type
 				// ensure self, the app delegate, still exists - the app has not been shut down
 				guard let self_s = self else { return }
 
-				self_s.serialQueue.sync
+				self_s.threadQueue.sync
 				{
 					self_s.keepRunning = true
 				}
@@ -169,7 +169,7 @@ class Server // a pass-by-reference type
 		{
 			// most likely will be called from a different thread than synchronous Server.start()
 
-			serialQueue.sync
+			threadQueue.sync
 			{
 				keepRunning = false
 			}
@@ -180,7 +180,7 @@ class Server // a pass-by-reference type
 		private let server: UDPServer
 
 		// Swift's low-overhead thread synchronization primitive
-		private let serialQueue = DispatchQueue(label: "InService.keepRunning.queue")
+		private let threadQueue = DispatchQueue(label: "InService.keepRunning.queue")
 
 		private var keepRunning = false
 	}
