@@ -38,6 +38,7 @@ extension Speed
 	
 	static func zero() -> Speed
 	{
+		// keep symmetric to Timestamp.now() (re-created on demand), thus static func vs. static let
 		return Speed(0, in: .metersPerSecond)
 	}
 }
