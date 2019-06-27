@@ -19,7 +19,7 @@ enum BinaryCoder // enums can be set up as pure namespaces that users can't acci
 
 	// Double
 	
-	@discardableResult // consumer might not be interested in the number of bytes processed
+	@discardableResult // a consumer might not be interested in the number of bytes processed
 	static func encode(payload: Double, into data: inout Data) throws -> /* follow MemoryLayout<T> for byte-count */ Int
 	{
 		let byteCount = MemoryLayout<Double>.size
