@@ -21,7 +21,7 @@ class BrokenDrone: SimulatedDrone
 		}
 		else
 		{
-			// break - noop
+			// break - noop, do not relocate any longer
 		}
 	}
 	
