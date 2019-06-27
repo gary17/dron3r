@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C3C4E767A3C753177394E5C /* Pods_Dron3r.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771DA578846AE0EDE89214A5 /* Pods_Dron3r.framework */; };
+		CEBC6D7822C4C8670035D735 /* RESOURCES.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEBC6D7722C4C8660035D735 /* RESOURCES.txt */; };
 		CEDE56F3222ACBD900CD388F /* Drone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56E7222ACBD800CD388F /* Drone.swift */; };
 		CEDE56F4222ACBD900CD388F /* Timestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56E8222ACBD800CD388F /* Timestamp.swift */; };
 		CEDE56F5222ACBD900CD388F /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56E9222ACBD800CD388F /* Speed.swift */; };
@@ -81,6 +82,7 @@
 		C2A7D512C7EECEC776230F15 /* Pods-Dron3rTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dron3rTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dron3rTests/Pods-Dron3rTests.release.xcconfig"; sourceTree = "<group>"; };
 		C5DDB609FFE4462207E401B6 /* Pods-Dron3rUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dron3rUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dron3rUITests/Pods-Dron3rUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CE2063D6213829A900050276 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBC6D7722C4C8660035D735 /* RESOURCES.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RESOURCES.txt; sourceTree = "<group>"; };
 		CEDE56E7222ACBD800CD388F /* Drone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drone.swift; sourceTree = "<group>"; };
 		CEDE56E8222ACBD800CD388F /* Timestamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timestamp.swift; sourceTree = "<group>"; };
 		CEDE56E9222ACBD800CD388F /* Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				CEDE5741222B10F100CD388F /* Client */,
 				CEDE573E222B107C00CD388F /* Core */,
 				CEDE5740222B10DC00CD388F /* Server */,
+				CEBC6D7722C4C8660035D735 /* RESOURCES.txt */,
 				CEF5996A20FDE9AE009792BC /* Info.plist */,
 				CEF5996720FDE9AE009792BC /* LaunchScreen.storyboard */,
 				CEF5996220FDE9AE009792BC /* Main.storyboard */,
@@ -398,6 +401,7 @@
 			files = (
 				CEF5996920FDE9AE009792BC /* LaunchScreen.storyboard in Resources */,
 				CEF5996620FDE9AE009792BC /* Assets.xcassets in Resources */,
+				CEBC6D7822C4C8670035D735 /* RESOURCES.txt in Resources */,
 				CEF5996420FDE9AE009792BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

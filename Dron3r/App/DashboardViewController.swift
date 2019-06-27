@@ -5,14 +5,6 @@
 //  Copyright © 2019 R&F Consulting, Inc. All rights reserved.
 //
 
-/*
-
-FYI: the drone icon - https://www.iconfinder.com/icons/2633201/camera_drone_helicopter_spy_technology_icon
-"Free for commercial use (Include link to authors website)"
-https://creativemarket.com/BomSymbols
-
-*/
-
 import UIKit
 
 // https://github.com/daltoniam/Starscream
