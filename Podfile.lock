@@ -1,0 +1,32 @@
+PODS:
+  - Starscream (3.0.5)
+  - Swifter (1.4.1)
+  - SwiftSocket (2.0.2)
+
+DEPENDENCIES:
+  - Starscream
+  - Swifter (from `https://github.com/httpswift/swifter.git`)
+  - SwiftSocket
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Starscream
+    - SwiftSocket
+
+EXTERNAL SOURCES:
+  Swifter:
+    :git: https://github.com/httpswift/swifter.git
+
+CHECKOUT OPTIONS:
+  Swifter:
+    :commit: b366f5ed088d9d0d216a9ce18ec726f7912c30f3
+    :git: https://github.com/httpswift/swifter.git
+
+SPEC CHECKSUMS:
+  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+  Swifter: 62d14781d34600ffb6be99d350cf271be500600f
+  SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
+
+PODFILE CHECKSUM: 42428826bff1442898b7678959bfd5e8e3456234
+
+COCOAPODS: 1.6.1

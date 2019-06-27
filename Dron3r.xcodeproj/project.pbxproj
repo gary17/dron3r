@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C3C4E767A3C753177394E5C /* Pods_Dron3r.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771DA578846AE0EDE89214A5 /* Pods_Dron3r.framework */; };
+		CEDE56F3222ACBD900CD388F /* Drone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56E7222ACBD800CD388F /* Drone.swift */; };
+		CEDE56F4222ACBD900CD388F /* Timestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56E8222ACBD800CD388F /* Timestamp.swift */; };
+		CEDE56F5222ACBD900CD388F /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56E9222ACBD800CD388F /* Speed.swift */; };
+		CEDE56F6222ACBD900CD388F /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56EA222ACBD800CD388F /* Coordinate.swift */; };
+		CEDE56F7222ACBD900CD388F /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56EB222ACBD800CD388F /* Memento.swift */; };
+		CEDE56F8222ACBD900CD388F /* ObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56EC222ACBD800CD388F /* ObjectStore.swift */; };
+		CEDE56F9222ACBD900CD388F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56ED222ACBD800CD388F /* Location.swift */; };
+		CEDE56FA222ACBD900CD388F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56EE222ACBD800CD388F /* Logger.swift */; };
+		CEDE56FB222ACBD900CD388F /* RemoteDrone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56EF222ACBD800CD388F /* RemoteDrone.swift */; };
+		CEDE56FC222ACBD900CD388F /* Altitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56F0222ACBD800CD388F /* Altitude.swift */; };
+		CEDE56FD222ACBD900CD388F /* BinaryCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56F1222ACBD800CD388F /* BinaryCoder.swift */; };
+		CEDE56FE222ACBD900CD388F /* UUID+new.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56F2222ACBD800CD388F /* UUID+new.swift */; };
+		CEDE5701222ACBEA00CD388F /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE5700222ACBEA00CD388F /* Server.swift */; };
+		CEDE5705222ACBF700CD388F /* SimulatedDrone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE5703222ACBF700CD388F /* SimulatedDrone.swift */; };
+		CEDE5706222ACBF700CD388F /* ClientDrone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE5704222ACBF700CD388F /* ClientDrone.swift */; };
+		CEDE5707222AEF7D00CD388F /* BinaryCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56F1222ACBD800CD388F /* BinaryCoder.swift */; };
+		CEDE5708222AEF9600CD388F /* RemoteDrone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56EF222ACBD800CD388F /* RemoteDrone.swift */; };
+		CEDE5709222AEF9A00CD388F /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56EB222ACBD800CD388F /* Memento.swift */; };
+		CEDE570A222AEFAD00CD388F /* Altitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56F0222ACBD800CD388F /* Altitude.swift */; };
+		CEDE570B222AEFAD00CD388F /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56EA222ACBD800CD388F /* Coordinate.swift */; };
+		CEDE570C222AEFAD00CD388F /* Drone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56E7222ACBD800CD388F /* Drone.swift */; };
+		CEDE570D222AEFAD00CD388F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56ED222ACBD800CD388F /* Location.swift */; };
+		CEDE570E222AEFAD00CD388F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56EE222ACBD800CD388F /* Logger.swift */; };
+		CEDE570F222AEFAD00CD388F /* ObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56EC222ACBD800CD388F /* ObjectStore.swift */; };
+		CEDE5710222AEFAD00CD388F /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56E9222ACBD800CD388F /* Speed.swift */; };
+		CEDE5711222AEFAD00CD388F /* Timestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56E8222ACBD800CD388F /* Timestamp.swift */; };
+		CEDE5712222AEFAD00CD388F /* UUID+new.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE56F2222ACBD800CD388F /* UUID+new.swift */; };
+		CEDE571F222AEFB100CD388F /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE5700222ACBEA00CD388F /* Server.swift */; };
+		CEDE5721222AEFB400CD388F /* ClientDrone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE5704222ACBF700CD388F /* ClientDrone.swift */; };
+		CEDE5722222AEFB400CD388F /* SimulatedDrone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE5703222ACBF700CD388F /* SimulatedDrone.swift */; };
+		CEDE5725222AEFBE00CD388F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5999F20FE5081009792BC /* Config.swift */; };
+		CEDE5727222AEFC300CD388F /* BrokenDrone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF599B12100C419009792BC /* BrokenDrone.swift */; };
+		CEDE5728222AEFC300CD388F /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5999D20FE4925009792BC /* Client.swift */; };
+		CEDE5737222AF34A00CD388F /* Dron3rUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDE5736222AF34A00CD388F /* Dron3rUITests.swift */; };
+		CEF5995F20FDE9AE009792BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5995E20FDE9AE009792BC /* AppDelegate.swift */; };
+		CEF5996120FDE9AE009792BC /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5996020FDE9AE009792BC /* DashboardViewController.swift */; };
+		CEF5996420FDE9AE009792BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF5996220FDE9AE009792BC /* Main.storyboard */; };
+		CEF5996620FDE9AE009792BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF5996520FDE9AE009792BC /* Assets.xcassets */; };
+		CEF5996920FDE9AE009792BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF5996720FDE9AE009792BC /* LaunchScreen.storyboard */; };
+		CEF5997420FDE9AE009792BC /* Dron3rTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5997320FDE9AE009792BC /* Dron3rTests.swift */; };
+		CEF5999E20FE4925009792BC /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5999D20FE4925009792BC /* Client.swift */; };
+		CEF599A020FE5081009792BC /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5999F20FE5081009792BC /* Config.swift */; };
+		CEF599B22100C419009792BC /* BrokenDrone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF599B12100C419009792BC /* BrokenDrone.swift */; };
+		E4E14A68AF57471A7AED428F /* Pods_Dron3rTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82383B0A6061A4BB8BBC3DB2 /* Pods_Dron3rTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEDE5739222AF34A00CD388F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEF5995320FDE9AE009792BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEF5995A20FDE9AE009792BC;
+			remoteInfo = Dron3r;
+		};
+		CEF5997020FDE9AE009792BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEF5995320FDE9AE009792BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEF5995A20FDE9AE009792BC;
+			remoteInfo = Dron3r;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2734FA4C1631E3E68DCC43CC /* Pods-Dron3rUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dron3rUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dron3rUITests/Pods-Dron3rUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		54ACCC19FE8ACF3D9C0D6AEC /* Pods-Dron3r.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dron3r.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dron3r/Pods-Dron3r.release.xcconfig"; sourceTree = "<group>"; };
+		771DA578846AE0EDE89214A5 /* Pods_Dron3r.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dron3r.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82383B0A6061A4BB8BBC3DB2 /* Pods_Dron3rTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dron3rTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87BFEB44F6DDD630C309FDD5 /* Pods-Dron3r.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dron3r.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dron3r/Pods-Dron3r.debug.xcconfig"; sourceTree = "<group>"; };
+		B564CE2D47A38090767F27BE /* Pods-Dron3rTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dron3rTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dron3rTests/Pods-Dron3rTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2A7D512C7EECEC776230F15 /* Pods-Dron3rTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dron3rTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dron3rTests/Pods-Dron3rTests.release.xcconfig"; sourceTree = "<group>"; };
+		C5DDB609FFE4462207E401B6 /* Pods-Dron3rUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dron3rUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dron3rUITests/Pods-Dron3rUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE2063D6213829A900050276 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDE56E7222ACBD800CD388F /* Drone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drone.swift; sourceTree = "<group>"; };
+		CEDE56E8222ACBD800CD388F /* Timestamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timestamp.swift; sourceTree = "<group>"; };
+		CEDE56E9222ACBD800CD388F /* Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
+		CEDE56EA222ACBD800CD388F /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		CEDE56EB222ACBD800CD388F /* Memento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
+		CEDE56EC222ACBD800CD388F /* ObjectStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectStore.swift; sourceTree = "<group>"; };
+		CEDE56ED222ACBD800CD388F /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		CEDE56EE222ACBD800CD388F /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		CEDE56EF222ACBD800CD388F /* RemoteDrone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDrone.swift; sourceTree = "<group>"; };
+		CEDE56F0222ACBD800CD388F /* Altitude.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Altitude.swift; sourceTree = "<group>"; };
+		CEDE56F1222ACBD800CD388F /* BinaryCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryCoder.swift; sourceTree = "<group>"; };
+		CEDE56F2222ACBD800CD388F /* UUID+new.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+new.swift"; sourceTree = "<group>"; };
+		CEDE5700222ACBEA00CD388F /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		CEDE5703222ACBF700CD388F /* SimulatedDrone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatedDrone.swift; sourceTree = "<group>"; };
+		CEDE5704222ACBF700CD388F /* ClientDrone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientDrone.swift; sourceTree = "<group>"; };
+		CEDE5734222AF34A00CD388F /* Dron3rUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dron3rUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDE5736222AF34A00CD388F /* Dron3rUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dron3rUITests.swift; sourceTree = "<group>"; };
+		CEDE5738222AF34A00CD388F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF5995B20FDE9AE009792BC /* Dron3r.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dron3r.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF5995E20FDE9AE009792BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEF5996020FDE9AE009792BC /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		CEF5996320FDE9AE009792BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEF5996520FDE9AE009792BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEF5996820FDE9AE009792BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEF5996A20FDE9AE009792BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF5996F20FDE9AE009792BC /* Dron3rTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dron3rTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF5997320FDE9AE009792BC /* Dron3rTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dron3rTests.swift; sourceTree = "<group>"; };
+		CEF5997520FDE9AE009792BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF5999D20FE4925009792BC /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		CEF5999F20FE5081009792BC /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		CEF599B12100C419009792BC /* BrokenDrone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenDrone.swift; sourceTree = "<group>"; };
+		EDB8ADCCA379C78E72BF9B50 /* Pods_Dron3rUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dron3rUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEDE5731222AF34A00CD388F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF5995820FDE9AE009792BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C3C4E767A3C753177394E5C /* Pods_Dron3r.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF5996C20FDE9AE009792BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E14A68AF57471A7AED428F /* Pods_Dron3rTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		683188BFCAE32C743C3471D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87BFEB44F6DDD630C309FDD5 /* Pods-Dron3r.debug.xcconfig */,
+				54ACCC19FE8ACF3D9C0D6AEC /* Pods-Dron3r.release.xcconfig */,
+				B564CE2D47A38090767F27BE /* Pods-Dron3rTests.debug.xcconfig */,
+				C2A7D512C7EECEC776230F15 /* Pods-Dron3rTests.release.xcconfig */,
+				2734FA4C1631E3E68DCC43CC /* Pods-Dron3rUITests.debug.xcconfig */,
+				C5DDB609FFE4462207E401B6 /* Pods-Dron3rUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE2063D4213829A900050276 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE2063D6213829A900050276 /* Starscream.framework */,
+				771DA578846AE0EDE89214A5 /* Pods_Dron3r.framework */,
+				82383B0A6061A4BB8BBC3DB2 /* Pods_Dron3rTests.framework */,
+				EDB8ADCCA379C78E72BF9B50 /* Pods_Dron3rUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEDE5735222AF34A00CD388F /* Dron3rUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE5736222AF34A00CD388F /* Dron3rUITests.swift */,
+				CEDE5738222AF34A00CD388F /* Info.plist */,
+			);
+			path = Dron3rUITests;
+			sourceTree = "<group>";
+		};
+		CEDE573E222B107C00CD388F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE56F0222ACBD800CD388F /* Altitude.swift */,
+				CEDE56F1222ACBD800CD388F /* BinaryCoder.swift */,
+				CEDE56EA222ACBD800CD388F /* Coordinate.swift */,
+				CEDE56E7222ACBD800CD388F /* Drone.swift */,
+				CEDE56ED222ACBD800CD388F /* Location.swift */,
+				CEDE56EE222ACBD800CD388F /* Logger.swift */,
+				CEDE56EB222ACBD800CD388F /* Memento.swift */,
+				CEDE56EC222ACBD800CD388F /* ObjectStore.swift */,
+				CEDE56EF222ACBD800CD388F /* RemoteDrone.swift */,
+				CEDE56E9222ACBD800CD388F /* Speed.swift */,
+				CEDE56E8222ACBD800CD388F /* Timestamp.swift */,
+				CEDE56F2222ACBD800CD388F /* UUID+new.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CEDE5740222B10DC00CD388F /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE5700222ACBEA00CD388F /* Server.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		CEDE5741222B10F100CD388F /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE5704222ACBF700CD388F /* ClientDrone.swift */,
+				CEDE5703222ACBF700CD388F /* SimulatedDrone.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		CEDE5742222B111100CD388F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CEF5995E20FDE9AE009792BC /* AppDelegate.swift */,
+				CEF5999F20FE5081009792BC /* Config.swift */,
+				CEF5996020FDE9AE009792BC /* DashboardViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CEDE5744222B117F00CD388F /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				CEF599B12100C419009792BC /* BrokenDrone.swift */,
+				CEF5999D20FE4925009792BC /* Client.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		CEF5995220FDE9AE009792BC = {
+			isa = PBXGroup;
+			children = (
+				CEF5995D20FDE9AE009792BC /* Dron3r */,
+				CEF5997220FDE9AE009792BC /* Dron3rTests */,
+				CEDE5735222AF34A00CD388F /* Dron3rUITests */,
+				CEF5995C20FDE9AE009792BC /* Products */,
+				CE2063D4213829A900050276 /* Frameworks */,
+				683188BFCAE32C743C3471D7 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		CEF5995C20FDE9AE009792BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEF5995B20FDE9AE009792BC /* Dron3r.app */,
+				CEF5996F20FDE9AE009792BC /* Dron3rTests.xctest */,
+				CEDE5734222AF34A00CD388F /* Dron3rUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF5995D20FDE9AE009792BC /* Dron3r */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE5744222B117F00CD388F /* Test */,
+				CEDE5742222B111100CD388F /* App */,
+				CEDE5741222B10F100CD388F /* Client */,
+				CEDE573E222B107C00CD388F /* Core */,
+				CEDE5740222B10DC00CD388F /* Server */,
+				CEF5996A20FDE9AE009792BC /* Info.plist */,
+				CEF5996720FDE9AE009792BC /* LaunchScreen.storyboard */,
+				CEF5996220FDE9AE009792BC /* Main.storyboard */,
+				CEF5996520FDE9AE009792BC /* Assets.xcassets */,
+			);
+			path = Dron3r;
+			sourceTree = "<group>";
+		};
+		CEF5997220FDE9AE009792BC /* Dron3rTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEF5997320FDE9AE009792BC /* Dron3rTests.swift */,
+				CEF5997520FDE9AE009792BC /* Info.plist */,
+			);
+			path = Dron3rTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEDE5733222AF34A00CD388F /* Dron3rUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDE573B222AF34A00CD388F /* Build configuration list for PBXNativeTarget "Dron3rUITests" */;
+			buildPhases = (
+				CEDE5730222AF34A00CD388F /* Sources */,
+				CEDE5731222AF34A00CD388F /* Frameworks */,
+				CEDE5732222AF34A00CD388F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEDE573A222AF34A00CD388F /* PBXTargetDependency */,
+			);
+			name = Dron3rUITests;
+			productName = Dron3rUITests;
+			productReference = CEDE5734222AF34A00CD388F /* Dron3rUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CEF5995A20FDE9AE009792BC /* Dron3r */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF5998320FDE9AE009792BC /* Build configuration list for PBXNativeTarget "Dron3r" */;
+			buildPhases = (
+				3FE0B55EC7BFA5CCC3058237 /* [CP] Check Pods Manifest.lock */,
+				CEF5995720FDE9AE009792BC /* Sources */,
+				CEF5995820FDE9AE009792BC /* Frameworks */,
+				CEF5995920FDE9AE009792BC /* Resources */,
+				CCA9DDD8841A0EF55E12BDF5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dron3r;
+			productName = Dron3r;
+			productReference = CEF5995B20FDE9AE009792BC /* Dron3r.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEF5996E20FDE9AE009792BC /* Dron3rTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF5998620FDE9AE009792BC /* Build configuration list for PBXNativeTarget "Dron3rTests" */;
+			buildPhases = (
+				A0C08E0BBD99047B0526EB3A /* [CP] Check Pods Manifest.lock */,
+				CEF5996B20FDE9AE009792BC /* Sources */,
+				CEF5996C20FDE9AE009792BC /* Frameworks */,
+				CEF5996D20FDE9AE009792BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEF5997120FDE9AE009792BC /* PBXTargetDependency */,
+			);
+			name = Dron3rTests;
+			productName = Dron3rTests;
+			productReference = CEF5996F20FDE9AE009792BC /* Dron3rTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEF5995320FDE9AE009792BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = self;
+				TargetAttributes = {
+					CEDE5733222AF34A00CD388F = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEF5995A20FDE9AE009792BC;
+					};
+					CEF5995A20FDE9AE009792BC = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+					CEF5996E20FDE9AE009792BC = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEF5995A20FDE9AE009792BC;
+					};
+				};
+			};
+			buildConfigurationList = CEF5995620FDE9AE009792BC /* Build configuration list for PBXProject "Dron3r" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEF5995220FDE9AE009792BC;
+			productRefGroup = CEF5995C20FDE9AE009792BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEF5995A20FDE9AE009792BC /* Dron3r */,
+				CEF5996E20FDE9AE009792BC /* Dron3rTests */,
+				CEDE5733222AF34A00CD388F /* Dron3rUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEDE5732222AF34A00CD388F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF5995920FDE9AE009792BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF5996920FDE9AE009792BC /* LaunchScreen.storyboard in Resources */,
+				CEF5996620FDE9AE009792BC /* Assets.xcassets in Resources */,
+				CEF5996420FDE9AE009792BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF5996D20FDE9AE009792BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FE0B55EC7BFA5CCC3058237 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dron3r-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0C08E0BBD99047B0526EB3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dron3rTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCA9DDD8841A0EF55E12BDF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dron3r/Pods-Dron3r-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/Swifter/Swifter.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swifter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dron3r/Pods-Dron3r-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEDE5730222AF34A00CD388F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDE5737222AF34A00CD388F /* Dron3rUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF5995720FDE9AE009792BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDE56F4222ACBD900CD388F /* Timestamp.swift in Sources */,
+				CEDE56F3222ACBD900CD388F /* Drone.swift in Sources */,
+				CEF599B22100C419009792BC /* BrokenDrone.swift in Sources */,
+				CEF5996120FDE9AE009792BC /* DashboardViewController.swift in Sources */,
+				CEF599A020FE5081009792BC /* Config.swift in Sources */,
+				CEDE56FE222ACBD900CD388F /* UUID+new.swift in Sources */,
+				CEDE56F6222ACBD900CD388F /* Coordinate.swift in Sources */,
+				CEF5995F20FDE9AE009792BC /* AppDelegate.swift in Sources */,
+				CEDE56F8222ACBD900CD388F /* ObjectStore.swift in Sources */,
+				CEDE56F7222ACBD900CD388F /* Memento.swift in Sources */,
+				CEDE56FA222ACBD900CD388F /* Logger.swift in Sources */,
+				CEDE5706222ACBF700CD388F /* ClientDrone.swift in Sources */,
+				CEDE56FC222ACBD900CD388F /* Altitude.swift in Sources */,
+				CEDE56FB222ACBD900CD388F /* RemoteDrone.swift in Sources */,
+				CEDE5705222ACBF700CD388F /* SimulatedDrone.swift in Sources */,
+				CEF5999E20FE4925009792BC /* Client.swift in Sources */,
+				CEDE56F9222ACBD900CD388F /* Location.swift in Sources */,
+				CEDE56FD222ACBD900CD388F /* BinaryCoder.swift in Sources */,
+				CEDE5701222ACBEA00CD388F /* Server.swift in Sources */,
+				CEDE56F5222ACBD900CD388F /* Speed.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF5996B20FDE9AE009792BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDE571F222AEFB100CD388F /* Server.swift in Sources */,
+				CEDE5721222AEFB400CD388F /* ClientDrone.swift in Sources */,
+				CEDE570A222AEFAD00CD388F /* Altitude.swift in Sources */,
+				CEDE5727222AEFC300CD388F /* BrokenDrone.swift in Sources */,
+				CEDE5707222AEF7D00CD388F /* BinaryCoder.swift in Sources */,
+				CEDE5725222AEFBE00CD388F /* Config.swift in Sources */,
+				CEDE570D222AEFAD00CD388F /* Location.swift in Sources */,
+				CEDE5712222AEFAD00CD388F /* UUID+new.swift in Sources */,
+				CEDE5710222AEFAD00CD388F /* Speed.swift in Sources */,
+				CEDE570C222AEFAD00CD388F /* Drone.swift in Sources */,
+				CEDE570E222AEFAD00CD388F /* Logger.swift in Sources */,
+				CEDE5711222AEFAD00CD388F /* Timestamp.swift in Sources */,
+				CEDE5709222AEF9A00CD388F /* Memento.swift in Sources */,
+				CEDE5708222AEF9600CD388F /* RemoteDrone.swift in Sources */,
+				CEF5997420FDE9AE009792BC /* Dron3rTests.swift in Sources */,
+				CEDE570F222AEFAD00CD388F /* ObjectStore.swift in Sources */,
+				CEDE5728222AEFC300CD388F /* Client.swift in Sources */,
+				CEDE570B222AEFAD00CD388F /* Coordinate.swift in Sources */,
+				CEDE5722222AEFB400CD388F /* SimulatedDrone.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEDE573A222AF34A00CD388F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEF5995A20FDE9AE009792BC /* Dron3r */;
+			targetProxy = CEDE5739222AF34A00CD388F /* PBXContainerItemProxy */;
+		};
+		CEF5997120FDE9AE009792BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEF5995A20FDE9AE009792BC /* Dron3r */;
+			targetProxy = CEF5997020FDE9AE009792BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEF5996220FDE9AE009792BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF5996320FDE9AE009792BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEF5996720FDE9AE009792BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF5996820FDE9AE009792BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEDE573C222AF34A00CD388F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C5ZU28F48;
+				INFOPLIST_FILE = Dron3rUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.Dron3rUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dron3r;
+			};
+			name = Debug;
+		};
+		CEDE573D222AF34A00CD388F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C5ZU28F48;
+				INFOPLIST_FILE = Dron3rUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.Dron3rUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dron3r;
+			};
+			name = Release;
+		};
+		CEF5998120FDE9AE009792BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEF5998220FDE9AE009792BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEF5998420FDE9AE009792BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87BFEB44F6DDD630C309FDD5 /* Pods-Dron3r.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FY75TBK9H;
+				INFOPLIST_FILE = Dron3r/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rfcons.com.dron3r;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEF5998520FDE9AE009792BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54ACCC19FE8ACF3D9C0D6AEC /* Pods-Dron3r.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FY75TBK9H;
+				INFOPLIST_FILE = Dron3r/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rfcons.com.dron3r;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEF5998720FDE9AE009792BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B564CE2D47A38090767F27BE /* Pods-Dron3rTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C5ZU28F48;
+				INFOPLIST_FILE = Dron3rTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rfcons.com.Dron3rTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dron3r.app/Dron3r";
+			};
+			name = Debug;
+		};
+		CEF5998820FDE9AE009792BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2A7D512C7EECEC776230F15 /* Pods-Dron3rTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C5ZU28F48;
+				INFOPLIST_FILE = Dron3rTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rfcons.com.Dron3rTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dron3r.app/Dron3r";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEDE573B222AF34A00CD388F /* Build configuration list for PBXNativeTarget "Dron3rUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDE573C222AF34A00CD388F /* Debug */,
+				CEDE573D222AF34A00CD388F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF5995620FDE9AE009792BC /* Build configuration list for PBXProject "Dron3r" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF5998120FDE9AE009792BC /* Debug */,
+				CEF5998220FDE9AE009792BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF5998320FDE9AE009792BC /* Build configuration list for PBXNativeTarget "Dron3r" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF5998420FDE9AE009792BC /* Debug */,
+				CEF5998520FDE9AE009792BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF5998620FDE9AE009792BC /* Build configuration list for PBXNativeTarget "Dron3rTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF5998720FDE9AE009792BC /* Debug */,
+				CEF5998820FDE9AE009792BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEF5995320FDE9AE009792BC /* Project object */;
+}
