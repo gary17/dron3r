@@ -59,7 +59,7 @@ class Server // a pass-by-reference type
 	
 	private func inHandler(data: [UInt8], address: String, port: UInt16)
 	{
-		guard let memento = Memento(decoding: Data(bytes: data)) else
+		guard let memento = Memento(decoding: Data(data)) else
 		{
 			// TODO: request a specification on how to report server-side errors
 			

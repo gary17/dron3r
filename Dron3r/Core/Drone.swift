@@ -18,8 +18,8 @@ class Drone // a pass-by-reference type
 	// optional values ("?"), might be NULL (not yet known)
 	// public read access; internal write access, allow mutation only in self and derivations (see SimulatedDrone)
 	//
-	internal(set) var location: Location?
-	internal(set) var speed: Speed?
+	var location: Location?
+	var speed: Speed?
 	
 	init(identifier: UUID)
 	{

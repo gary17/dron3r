@@ -47,8 +47,9 @@ enum BinaryCoder // enums can be set up as pure namespaces that users can't acci
 		var swapped = CFSwappedFloat64()
 
 		// accesses the raw bytes in the data's buffer
-		data.withUnsafeBytes({ (bytes: UnsafePointer<UInt8>) -> Void in
-			let from = bytes + offset
+		data.withUnsafeBytes({ (bytes: UnsafeRawBufferPointer) -> Void in
+			let buffer: UnsafePointer<UInt8> = bytes.baseAddress!.assumingMemoryBound(to: UInt8.self)
+			let from = buffer + offset
 			memcpy(&swapped, from, byteCount)
 		})
 
@@ -84,8 +85,9 @@ enum BinaryCoder // enums can be set up as pure namespaces that users can't acci
 		}
 
 		// accesses the raw bytes in the data's buffer
-		data.withUnsafeBytes({ (bytes: UnsafePointer<UInt8>) -> Void in
-			let from = bytes + offset
+		data.withUnsafeBytes({ (bytes: UnsafeRawBufferPointer) -> Void in
+			let buffer: UnsafePointer<UInt8> = bytes.baseAddress!.assumingMemoryBound(to: UInt8.self)
+			let from = buffer + offset
 			// accesses the raw bytes in the tuple's buffer
 			_ = withUnsafeMutablePointer(to: &payload) { memcpy($0, from, byteCount) }
 		})

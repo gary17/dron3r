@@ -14,7 +14,7 @@ class RemoteDrone: Drone
 	// SPEC: "visually highlight the drones that have not been moving for more than 10 seconds"
 	//
 	// implement this functionality on the server-side, will likely be needed by all clients on all platforms
-	internal(set) var timeOfLastKnownMovement: Timestamp?
+	private(set) var timeOfLastKnownMovement: Timestamp?
 
 	func update(to location: Location?, with speed: Speed?, at timestamp: Timestamp)
 	{
